@@ -23,6 +23,6 @@ RUN mkdir /etc/service/guacamole
 COPY guacamole.sh /etc/service/guacamole/run
 
 
-EXPOSE 8080 5900
+EXPOSE 8080
 
 CMD ["/sbin/my_init"]      
