@@ -15,6 +15,7 @@ cat <<EOL__ >/etc/guacamole/user-mapping.xml
 </user-mapping>
 EOL__
 
+export _JAVA_OPTIONS=-Djava.net.preferIPv4Stack=true
 export CATALINA_BASE=/var/lib/tomcat8/
 
 exec /usr/share/tomcat8/bin/catalina.sh run
