@@ -22,6 +22,9 @@ COPY xvfb.sh /etc/service/xvfb/run
 RUN mkdir /etc/service/guacamole
 COPY guacamole.sh /etc/service/guacamole/run
 
+RUN mkdir /etc/service/guacd
+COPY guacd.sh /etc/service/guacd/run
+
 
 EXPOSE 8080
 
